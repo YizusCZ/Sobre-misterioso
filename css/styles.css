@@ -74,23 +74,48 @@ h1{
         width: 40px;
         height: 40px;
         left: 140px;
-        top: -40px;
+        top: -35px;
         z-index: 1;
         background: #f03a64;
         transform-origin: bottom right; 
         animation: zhankai1 10s infinite;
 }
 
+
 .petalo:nth-child(5){
         width: 50px;
         height: 50px;
         border-radius: 20px;
         left: 165px;
-        top: -50px;
+        top: -45px;
         z-index: 0;
         background: #d1123f;
         
 }
+
+.petalo:nth-child(6){
+        transform: rotate(90deg);
+        width: 50px;
+        height: 40px;
+        left: 138px;
+        top: -20px;
+        z-index: 1;
+        background: #f03a64;
+        transform-origin: bottom right; 
+        animation: zhankai1 10s infinite;
+}
+
+.petalo:nth-child(7){
+        width: 50px;
+        height: 40px;
+        left: 140px;
+        top: -28px;
+        z-index: 1;
+        background: #f03a64;
+        transform-origin: bottom right; 
+        animation: zhankai2 10s infinite;
+}
+
 
 .hoja{
         position: absolute;
@@ -99,9 +124,9 @@ h1{
 }
 
 .tallo{
-        width: 240px;
-        height: 40px;
-        left: 0px;
+        width: 120px;
+        height: 20px;
+        margin-left: 75px;
         display: flex;
         align-items: center;
         align-self: center;
@@ -114,7 +139,7 @@ h1{
 
 .hojas{
         width: 50px;
-        height: 40px;
+        height: 50px;
         border-radius: 0px 50%;
         background: #77a377;
         position: absolute;
@@ -157,4 +182,7 @@ h1{
             transform: rotate(0deg);
         }
     }
+
+
+
 
