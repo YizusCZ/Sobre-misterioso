@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="contenedor_carta">
+        <div class="envoltura">
+            <div class="sobre">
+                <div class="papel">
+                            <div class="rosa">
+                                <div class="flor">
+                                    <div class="petalo"></div>
+                                    <div class="petalo"></div>
+                                    <div class="petalo"></div>
+                                    <div class="petalo"></div>
+                                    <div class="petalo"></div>
+                                </div>
+                                <div class="hoja">
+                                    <div class="tallo"></div>
+                                    <div class="hojas"></div>
+                                    <div class="hojas"></div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+            <div class="corazon"></div>
+        </div>
+        <div class = "contenedor_boton">
+            <button class="boton">PRESIONA AQUÍ</button>
+            <div class="mensaje"></div>
+            <div class="contenedor_imagen">
+                <img class="imagen" src="images/gato.jpg" width="200px" height="150" style="display: none;">
+            </div>
+    </div>
+
+    <script>
+        const sobre = document.querySelector('.envoltura');
+        sobre.addEventListener('click', () => {
+            sobre.classList.toggle('flap');
+        });
+    </script>
+
+    <script>
+        document.querySelector('.boton').addEventListener('click', function() {
+        document.querySelector('.mensaje').innerText = "Eres sin lugar a dudas, la persona más linda que conozco <3";
+        document.querySelector('.imagen').style.display = 'block';
+        this.style.display = 'none'; // 'this' se refiere al botón clicado
+});
+    </script>
+</body>
+</html>
