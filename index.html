@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- FUENTES PERSONALIZADAS, IGNORAR-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="contenedor_carta">
@@ -15,6 +19,8 @@
                 <div class="papel">
                             <div class="rosa">
                                 <div class="flor">
+                                    <div class="petalo"></div>
+                                    <div class="petalo"></div>
                                     <div class="petalo"></div>
                                     <div class="petalo"></div>
                                     <div class="petalo"></div>
@@ -34,11 +40,13 @@
         </div>
         <div class = "contenedor_boton">
             <button class="boton">PRESIONA AQUÍ</button>
-            <div class="mensaje"></div>
+            <div class="mensaje">
+            </div>
             <div class="contenedor_imagen">
                 <img class="imagen" src="images/gato.jpg" width="200px" height="150" style="display: none;">
             </div>
     </div>
+
 
     <script>
         const sobre = document.querySelector('.envoltura');
@@ -49,8 +57,10 @@
 
     <script>
         document.querySelector('.boton').addEventListener('click', function() {
-        document.querySelector('.mensaje').innerText = "Eres sin lugar a dudas, la persona más linda que conozco <3";
-        document.querySelector('.imagen').style.display = 'block';
+        let mensaje = document.querySelector('.mensaje');
+        mensaje.innerText = "Eres sin lugar a dudas, la persona más linda que conozco <3";
+        mensaje.style.display = "flex";
+        let imagen = document.querySelector('.imagen').style.display = 'block';
         this.style.display = 'none';
 });
     </script>
